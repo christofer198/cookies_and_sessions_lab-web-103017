@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    binding.pry
+    byebug
     cart << params[:products]
     render :index
   end
